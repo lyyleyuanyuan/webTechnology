@@ -33,6 +33,9 @@ module.exports = {
   dest: "./dist", // 设置输出目录
   base: '/webTechnology/',
   repo: 'https://github.com/lyyleyuanyuan/webTechnology',
+  plugins: [
+    "vuepress-plugin-cat",
+  ],
   themeConfig: {
     nav: nav,
     sidebar: sidebar,
@@ -45,9 +48,6 @@ module.exports = {
         buttonText: 'Refresh'
       }
     },
-    plugins: [
-      "vuepress-plugin-cat",
-    ],
     editLinks: true,
     editLinkText: '在 GitHub 上编辑此页 ！'
   }

@@ -1,0 +1,28 @@
+{
+  "name": "webTechnology",
+  "version": "1.0.0",
+  "description": "记录一些前端开发的小技巧",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vuepress dev docs",
+    "build": "node ./build/addComponents.js && vuepress build docs && node ./build/delComponents.js",
+    "deploy": "gh-pages -d dist",
+    "deploy:build": "npm run build && gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lyyleyuanyuan/webTechnology.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lyyleyuanyuan/webTechnology/issues"
+  },
+  "homepage": "https://github.com/lyyleyuanyuan/webTechnology#readme",
+  "devDependencies": {
+    "gh-pages": "^2.1.1",
+    "vuepress": "^1.0.3"
+  }
+}

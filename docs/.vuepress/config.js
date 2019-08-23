@@ -25,7 +25,7 @@ const sidebar = [
       ["/jsItems/debounceThrottle/", '防抖和节流'],
     ]
   }, {
-    title: '一些其他记录',
+    title: '其他',
     // collapsable: false,
     children: [
       ["/otherItems/addIconfont/", '制作icon字体'],

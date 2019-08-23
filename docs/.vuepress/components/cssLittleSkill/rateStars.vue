@@ -23,8 +23,7 @@ $contentone: "\e901";
     font-size: 30px;
     padding-right: 10px;
     font-size: 18px;
-    // 默认显示的星星
-    &::after {
+     &::after {
       content: $content;
       color: $basic;
       // transition: color 0.8s ease; // 加点颜色过渡效果
@@ -40,7 +39,7 @@ $contentone: "\e901";
       }
       // 鼠标移入使星星放大
       &:hover {
-        // transform: scale(1.2);
+        transform: scale(1.2);
         // transform: scale(1.2) rotateZ(180deg);
       }
     }

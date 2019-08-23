@@ -57,7 +57,7 @@ $contentone: "\e901";
 
 
 + **原理**
-  + 找个好看的iconfont，<a href="https://www.iconfont.cn/">Iconfont-阿里巴巴矢量图标库</a>；
+  + 找个好看的iconfont并且使用。如果不会~可以查看<a href="../../otherItems/iconfont">icon字体制作及引入</a>；
   + 用5个radio单选框，把默认样式去掉，显示星星；
   + 用checked伪类监听用户选中✅，由默认的星星变成高亮的星星；
   + 然后配合'~'兄弟操作符把当前选中的所有兄弟元素都一起高亮；

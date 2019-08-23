@@ -24,7 +24,13 @@ const sidebar = [
       ["/jsItems/arrayOperation4/", '数组遍历'],
       ["/jsItems/debounceThrottle/", '防抖和节流'],
     ]
-  },
+  }, {
+    title: '一些其他记录',
+    // collapsable: false,
+    children: [
+      ["/otherItems/addIconfont/", '制作icon字体'],
+    ]
+  }
 ]
 
 module.exports = {

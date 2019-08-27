@@ -20,26 +20,26 @@
 
 ```html
 <div class=" clearfloat">
-    <div class="left">Left</div>
-    <div class="right">Right</div>
+  <div class="left">Left</div>
+  <div class="right">Right</div>
 </div>
 ```
 
   
 
-```css
-    .clearfloat:after {
-        content: ".";
-        clear: both;
-        display: block;
-        height: 0;
-        overflow: hidden;
-        visibility: hidden;
-    }
+```scss
+.clearfloat:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
 
-    .clearfloat {
-        zoom: 1
-    }
+.clearfloat {
+  zoom: 1
+}
 ```
 
 ## 在结尾处添加空div标签clear:both
@@ -53,18 +53,18 @@
 
 ```html
 <div>
-    <div class="left">Left</div>
-    <div class="right">Right</div>
-    <div class="clearfloat"></div>
+  <div class="left">Left</div>
+  <div class="right">Right</div>
+  <div class="clearfloat"></div>
 </div>
 ```
 
   
 
-```css
-    .clearfloat {
-        clear: both
-    }
+```scss
+.clearfloat {
+  clear: both
+}
 ```
 
 ## 父级div定义height
@@ -78,17 +78,17 @@
 
 ```html
 <div class="clearfloat">
-    <div class="left">Left</div>
-    <div class="right">Right</div>
+  <div class="left">Left</div>
+  <div class="right">Right</div>
 </div>
 ```
 
   
 
-```css
-    .clearfloat {
-        height: 200px;
-    }
+```scss
+.clearfloat {
+  height: 200px;
+}
 ```
 
 ## 父级div定义overflow:hidden
@@ -101,18 +101,16 @@
 
 ```html
 <div class="clearfloat">
-    <div class="left">Left</div>
-    <div class="right">Right</div>
+  <div class="left">Left</div>
+  <div class="right">Right</div>
 </div>
 ```
 
-  
-
-```css
-  .clearfloat {
-      width: 98%;
-      overflow: hidden
-  }
+```scss
+.clearfloat {
+  width: 98%;
+  overflow: hidden
+}
 ```
 
 ## 父级div定义overflow:auto
@@ -125,18 +123,16 @@
 
 ```html
 <div class="clearfloat">
-    <div class="left">Left</div>
-    <div class="right">Right</div>
+  <div class="left">Left</div>
+  <div class="right">Right</div>
 </div>
 ```
 
-  
-
-```css
-  .clearfloat {
-      width: 98%;
-      overflow: auto
-  }
+```scss
+.clearfloat {
+  width: 98%;
+  overflow: auto
+}
 ```
 
 ## 父级div也一起浮动
@@ -149,23 +145,22 @@
 
 ```html
 <div class="clearfloat">
-    <div class="left">Left</div>
-    <div class="right">Right</div>
+  <div class="left">Left</div>
+  <div class="right">Right</div>
 </div>
-<div class="clearfloatOne">
-</div>
+<div class="clearfloatOne"></div>
 ```
 
   
 
-```css
-  .clearfloat {
-      float: left;
-  }
+```scss
+.clearfloat {
+  float: left;
+}
 
-  .clearfloatOne {
-      clear: both
-  }
+.clearfloatOne {
+  clear: both
+}
 ```
 
 ## 父级div定义display:table
@@ -178,16 +173,16 @@
 
 ```html
 <div class="clearfloat">
-    <div class="left">Left</div>
-    <div class="right">Right</div>
+  <div class="left">Left</div>
+  <div class="right">Right</div>
 </div>
 ```
 
   
 
-```css
-  .clearfloat {
-      display: table;
-  }
+```scss
+.clearfloat {
+  display: table;
+}
 ```
 

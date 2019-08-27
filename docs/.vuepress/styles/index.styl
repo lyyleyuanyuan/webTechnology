@@ -2,6 +2,7 @@
 
 .commonBox
   padding 10px 0 0
+  z-index 99
 
 .commonContent
   padding 10px 10 0
@@ -13,5 +14,89 @@
   justify-content center
   border 1px solid $borderColor
 
-.Option_Box
+.common_Option_Box
   padding 20px 0
+
+.flexBox_Common
+  .commonContentShow
+    flex-wrap wrap
+    padding 15px
+
+  .common_Option_Box
+    padding-bottom 0
+
+  .live_Flex_box
+    width 100%
+    color #fff
+    display flex
+    height 150px
+    overflow auto
+
+    .flex-item
+      display flex
+      justify-content center
+      align-items center
+      // cursor: pointer;
+      color #173656
+
+      &:nth-of-type(1)
+        height 8%
+        background rgba(#0ea5c6, 1)
+
+      &:nth-of-type(2)
+        height 32%
+        background rgba(#0ea5c6, 0.8)
+
+      &:nth-of-type(3)
+        height 22%
+        background rgba(#0ea5c6, 0.6)
+
+      &:nth-of-type(4)
+        height 58%
+        background rgba(#0ea5c6, 0.4)
+
+      &:nth-of-type(5)
+        height 28%
+        background rgba(#0ea5c6, 0.2)
+
+    .flexDirection_item
+      width 16%
+
+    .flexWrap_item
+      width 26%
+
+  .select_box
+    width 100%
+
+  .key-value
+    display flex
+    justify-content flex-start
+    align-items flex-start
+    // flex-wrap: wrap;
+    margin-bottom 15px
+
+    .key
+      // width: 100%;
+      min-width 120px
+
+  .defautItems
+    width 100%
+    display flex
+    align-items center
+    justify-content space-between
+
+    .slider_box
+      width 60%
+      display flex
+      align-items center
+      justify-content space-between
+
+      > span
+        min-width 90px
+
+    .block
+      width 100%
+
+  .language-css
+    pre
+      margin-bottom 0

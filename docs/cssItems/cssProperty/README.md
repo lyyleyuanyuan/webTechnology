@@ -5,26 +5,27 @@
 
 <cssProperty-textDecoration/>
 
-```css
-a {
-    text-decoration: none || underline || blink || overline || line-through;
-    /* none: 无装饰 || underline: 下划线 || blink: 闪烁  || overline: 上划线  || line-through: 贯穿线  */
-}
+```scss
+a { text-decoration: none; }
 ```
++ **none** ：无装饰
++ **underline** ：下划线
++ **blink** ：闪烁
++ **overline** ：上划线
++ **through** ：贯穿线
 
 ## 盒子模型:box-sizing
 
-```css
-div {
-    box-sizing: content-box | border-box | inherit;
-    /* content-box: width=border+padding+content  || border-box: width=content  || inherit: 初始即content-box  */
-}
+```scss
+div { box-sizing: content-box; }
 ```
 
-+ content-box
++ **content-box** ：`padding` 和 `border` **不被包含**在定义的 `width` 和 `height`之内。 
+  + width = content + border + padding +  margin
+  + 盒子实际宽度/高度 = 内容 + 边框 + 间隙 + 间隔
 
-  padding和border不被包含在定义的width和height之内。 盒子实际宽度（高度）=内容（content）+ 边框（border）+ 间隙（padding）+ 间隔（margin）
++ **border-box** ：`padding` 和 `border` **被包含**在定义的 `width` 和 `height` 之内。 
+  + width = content
+  + 内容 = 盒子实际宽度/高度 - 边框 - 间隙 - 间隔 
 
-+ border-box
-
-  padding和border被包含在定义的width和height之内。 内容（content）=盒子实际宽度（高度）- 边框（border）- 间隙（padding）- 间隔（margin）
++ **inherit** ：初始即content-box

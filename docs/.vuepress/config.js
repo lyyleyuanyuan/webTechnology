@@ -10,6 +10,7 @@ const sidebar = [
       ["/cssItems/cssProperty/", '常用属性总结'],
       ["/cssItems/clearfloat/", '清除浮动'],
       ["/cssItems/cssLittleSkill/", '奇技淫巧'],
+      ["/cssItems/flexlayout/", 'flex 布局'],
     ]
   },
   {
@@ -40,12 +41,13 @@ module.exports = {
   base: '/webTechnology/',
   repo: 'https://github.com/lyyleyuanyuan/webTechnology',
   plugins: [
+    require("./public/plugins/copy/index"),
     "vuepress-plugin-cat",
   ],
   themeConfig: {
     nav: nav,
     sidebar: sidebar,
-    sidebarDepth: 2,
+    sidebarDepth: 1,
     lastUpdated: 'Last Updated',
     searchMaxSuggestoins: 10,
     serviceWorker: {

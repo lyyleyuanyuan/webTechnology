@@ -8,12 +8,12 @@
 <template>
   <div class="commonBox">
     <el-collapse class="collapseMine" v-model="activeNames">
-      <el-collapse-item title="动态展示" name="1">
+      <el-collapse-item title="live demo" name="1">
         <div class="commonContent">
           <div class="commonContentShow">
             <p>{{showNumber}}</p>
           </div>
-          <div class="Option_Box">
+          <div class="common_Option_Box">
             <el-row>
               <el-button type="primary" @click="RandomId">生成随机数</el-button>
             </el-row>

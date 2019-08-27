@@ -1,6 +1,6 @@
 import ElementUI from 'element-ui'
 import './public/styles/iconfont.css'
-import './public/styles/base.scss'
+// import './public/styles/base.scss'
 import './public/styles/element-variables.scss'
 
 

@@ -8,12 +8,12 @@
 <template>
   <div class="commonBox">
     <el-collapse class="collapseMine" v-model="activeNames">
-      <el-collapse-item title="动态展示" name="1">
+      <el-collapse-item title="live demo" name="1">
         <div class="commonContent">
           <div class="commonContentShow">
             <p>{{ThousandNum(inputNumber)}}</p>
           </div>
-          <div class="Option_Box">
+          <div class="common_Option_Box">
             <span class="key_title">输入数字:</span>
             <el-input placeholder="请输入内容" type="number" v-model="inputNumber" clearable></el-input>
           </div>

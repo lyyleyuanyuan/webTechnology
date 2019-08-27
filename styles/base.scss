@@ -1,0 +1,11 @@
+// ----------------默认flex 布局----------------
+@mixin flex($align-items: flex-start, $justify-content: flex-start) {
+  display        : flex;
+  align-items    : $align-items;
+  justify-content: $justify-content;
+}
+
+// ----------------END默认flex 布局----------------
+
+
+$redss:red;

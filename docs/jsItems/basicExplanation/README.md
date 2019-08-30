@@ -66,7 +66,3 @@ function A() {
   }
   // 因为let 是定义块级作用域
   ```
-
- 
- <comment-comment/> 
- 

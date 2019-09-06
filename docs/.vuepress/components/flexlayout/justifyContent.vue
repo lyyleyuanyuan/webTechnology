@@ -33,12 +33,12 @@
 
 <script>
 export default {
-  name: "flexDirection",
+  name: "justifyContent",
   data() {
     return {
       activeNames: "1",
       keyValueItems: {
-        flexDirection: "flex-direction"
+        justifyContent: "justify-content"
       },
       containerStyle: {
         "align-items": "flex-start",
@@ -49,7 +49,13 @@ export default {
       },
       items: ["item1", "item2", "item3", "item4", "item5"],
       radioItems: {
-        flexDirection: ["row", "row-reverse", "column", "column-reverse"]
+        justifyContent: [
+          "flex-start",
+          "flex-end",
+          "center",
+          "space-between",
+          "space-around"
+        ]
       }
     };
   },

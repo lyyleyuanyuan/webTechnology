@@ -6,7 +6,7 @@
           <div class="commonContentShow">
             <div class="live_Flex_box" :style="containerStyle">
               <div
-                class="flex-item flexDirection_item"
+                class="flex-item flexWrap_item"
                 v-for="(item ,index) in items"
                 :key="index"
               >{{item}}</div>
@@ -33,23 +33,30 @@
 
 <script>
 export default {
-  name: "flexDirection",
+  name: "alignContent",
   data() {
     return {
       activeNames: "1",
       keyValueItems: {
-        flexDirection: "flex-direction"
+        alignContent: "align-content"
       },
       containerStyle: {
         "align-items": "flex-start",
         "justify-content": "flex-start",
         "align-content": "flex-start",
         "flex-direction": "row",
-        "flex-wrap": "nowrap"
+        "flex-wrap": "wrap"
       },
       items: ["item1", "item2", "item3", "item4", "item5"],
       radioItems: {
-        flexDirection: ["row", "row-reverse", "column", "column-reverse"]
+        alignContent: [
+          "stretch",
+          "flex-start",
+          "flex-end",
+          "center",
+          "space-between",
+          "space-around"
+        ]
       }
     };
   },

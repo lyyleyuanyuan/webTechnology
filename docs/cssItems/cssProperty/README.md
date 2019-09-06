@@ -29,3 +29,7 @@ div { box-sizing: content-box; }
   + 内容 = 盒子实际宽度/高度 - 边框 - 间隙 - 间隔 
 
 + **inherit** ：初始即content-box
+
+ 
+ <comment-comment/> 
+ 

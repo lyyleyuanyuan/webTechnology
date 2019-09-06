@@ -8,7 +8,7 @@
 <template>
   <div class="commonBox">
     <el-collapse class="collapseMine" v-model="activeNames">
-      <el-collapse-item title="live demo" name="1">
+      <el-collapse-item title="LIVE DEMO" name="1">
         <div class="commonContent">
           <div class="commonContentShow">
             <a :style="containerStyle">我是一个a标签</a>

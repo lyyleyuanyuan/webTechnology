@@ -232,3 +232,7 @@
   console.log(entries.next().value); // [1, 'b']
   console.log(entries.next().value); // [2, 'c']
   ```
+
+ 
+ <comment-comment/> 
+ 

@@ -1,3 +1,8 @@
+<style lang="scss" scoped>
+.stretch_Height {
+  height: inherit !important;
+}
+</style>
 <template>
   <div class="commonBox flexBox_Common">
     <el-collapse class="collapseMine" v-model="activeNames">
@@ -9,6 +14,7 @@
                 class="flex-item flexDirection_item"
                 v-for="(item ,index) in items"
                 :key="index"
+                :class="{'stretch_Height':containerStyle['align-items']=='stretch'}"
               >{{item}}</div>
             </div>
           </div>
@@ -33,12 +39,12 @@
 
 <script>
 export default {
-  name: "flexDirection",
+  name: "alignItems",
   data() {
     return {
       activeNames: "1",
       keyValueItems: {
-        flexDirection: "flex-direction"
+        alignItems: "align-items"
       },
       containerStyle: {
         "align-items": "flex-start",
@@ -49,7 +55,7 @@ export default {
       },
       items: ["item1", "item2", "item3", "item4", "item5"],
       radioItems: {
-        flexDirection: ["row", "row-reverse", "column", "column-reverse"]
+        alignItems: ["flex-start", "flex-end", "center", "baseline", "stretch"]
       }
     };
   },

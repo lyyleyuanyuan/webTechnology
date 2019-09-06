@@ -1,3 +1,12 @@
+<style scoped lang="scss">
+.order_selectBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+}
+</style>
 <template>
   <div class="commonBox flexBox_Common">
     <el-collapse class="collapseMine" v-model="activeNames">
@@ -9,20 +18,16 @@
                 class="flex-item flexDirection_item"
                 v-for="(item ,index) in items"
                 :key="index"
-              >{{item}}</div>
+                :style="{'flex-grow':item.order}"
+              >{{item.name}}</div>
             </div>
           </div>
         </div>
-        <div class="common_Option_Box select_box">
-          <div class="key-value" :key="indexs" v-for="(items,indexs) in keyValueItems">
-            <b class="key">{{items}}:</b>
+        <div class="common_Option_Box select_box order_selectBox">
+          <div :key="indexs" v-for="(items,indexs) in items">
+            <b class="key">{{items.name}}:</b>
             <div>
-              <el-radio
-                v-model="containerStyle[items]"
-                v-for="(value ,index) in radioItems[indexs]"
-                :key="index"
-                :label="value"
-              ></el-radio>
+              <el-input-number controls-position="right" :min="0" v-model="items.order" size="mini"></el-input-number>
             </div>
           </div>
         </div>
@@ -33,13 +38,10 @@
 
 <script>
 export default {
-  name: "flexDirection",
+  name: "flexGrow",
   data() {
     return {
       activeNames: "1",
-      keyValueItems: {
-        flexDirection: "flex-direction"
-      },
       containerStyle: {
         "align-items": "flex-start",
         "justify-content": "flex-start",
@@ -47,10 +49,28 @@ export default {
         "flex-direction": "row",
         "flex-wrap": "nowrap"
       },
-      items: ["item1", "item2", "item3", "item4", "item5"],
-      radioItems: {
-        flexDirection: ["row", "row-reverse", "column", "column-reverse"]
-      }
+      items: [
+        {
+          name: "item1",
+          order: 0
+        },
+        {
+          name: "item2",
+          order: 0
+        },
+        {
+          name: "item3",
+          order: 0
+        },
+        {
+          name: "item4",
+          order: 0
+        },
+        {
+          name: "item5",
+          order: 0
+        }
+      ]
     };
   },
   computed: {},

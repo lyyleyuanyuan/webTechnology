@@ -1,7 +1,7 @@
 <template>
   <div class="commonBox flexBox_Common">
     <el-collapse class="collapseMine" v-model="activeNames">
-      <el-collapse-item title="live demo" name="1">
+      <el-collapse-item title="LIVE DEMO" name="1">
         <div class="defautItems">
           <div></div>
           <div class="slider_box">
@@ -30,7 +30,7 @@
         </div>
         <div class="common_Option_Box select_box">
           <div class="key-value" :key="indexs" v-for="(items,indexs) in keyValueItems">
-            <b class="key">{{items}}:</b>
+            <b class="key">{{items}} : </b>
             <div>
               <el-radio
                 v-model="containerStyle[items]"
@@ -69,7 +69,7 @@ export default {
       containerStyle: {
         "align-items": "flex-start",
         "justify-content": "flex-start",
-        "align-content": "flex-start",
+        "align-content": "stretch",
         "flex-direction": "row",
         "flex-wrap": "nowrap"
       },
@@ -86,6 +86,7 @@ export default {
         ],
         alignItems: ["flex-start", "flex-end", "center", "baseline", "stretch"],
         alignContent: [
+          "stretch",
           "flex-start",
           "flex-end",
           "center",
@@ -113,12 +114,11 @@ export default {
       return styleStr;
     },
     setContainerStyleStr() {
-      this.$refs["flexContainer"].innerHTML =
-        "display: flex;\n" + this.styleToString(this.containerStyle);
+      this.$refs["flexContainer"].innerHTML = Prism.highlight(
+        "display: flex;\n" + this.styleToString(this.containerStyle),
+        Prism.languages.css
+      );
     },
-    // changeItemsNum(value) {
-    //   console.log(value);
-    // },
     changeItemsWidth(value) {
       this.itemsStyles = {
         width: (value ? value : this.itemsWith) + "%"

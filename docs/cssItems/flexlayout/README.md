@@ -187,6 +187,3 @@ flex = flex-grow + flex-shrink + flex-basis。<br/>
 可覆盖容器的 `align-items` 属性。<br/>
 默认值为 `auto` ，表示继承父元素的 `align-items` 属性，如果没有父元素，则等同于stretch。<br/>
 <flexlayout-flexSelf/>
- 
- <comment-comment/> 
- 

@@ -228,6 +228,3 @@
   })
   // [{"name":"Koro1"},{"name":"Koro1"},{"name":"Koro1"},{"name":"OB"},{"name":"OB"},{"name":"OB"}]
   ```
- 
- <comment-comment/> 
- 
